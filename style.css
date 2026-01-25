@@ -1,0 +1,63 @@
+css
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: #004080;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    max-width: 10000px;
+    margin: auto;
+}
+
+.encadre-titre {
+    border: 3px solid #004080;
+    background-color: #1f5183;
+    color: white;
+    padding: 20px;
+    margin: 0x auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+
+.titre-benlink {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer {
+    background-color: #004080;
+    color: #000;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+} 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px 0 20px 0;
+    text-align: left;
+} 
