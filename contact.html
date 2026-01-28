@@ -31,6 +31,18 @@
     <textarea id="message" name="message" rows="6" requiered></textarea>
     <button type="submit">Envoyer</button>
     </form>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+ <script>
+  (function() {
+    emailjs.init("user_5-jUuFobHtpJ1c1dJ");
+  })();
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_ben', 'template_ter0zaq', this)
+    .then(() => alert('Message envoyé à Benlink Enterprise avec succès!'))
+    .catch(error => alert('Erreur : ' + error.text));
+  });
+  </script>
   </section>
 </body>
 </html>
